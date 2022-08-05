@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+</head>
+
+<body>
+
+  <div id="timer" class="hidden">
+    <h1>30</h1>
+  </div>
+
+  <section id="winDecision" class="hidden">
+    <div id="endScreenStyle">
+      <h1 id="changeWin">Player 1 won</h1>
+    </div>
+    <button id="restart" class="button is-large is-hovered">restart</button>
+  </section>
+
+  <section id="winCount" class="hidden">
+    <div>
+      <h2 id="player1Count">Player1 Wins [0]</h2>
+      <h2 id="player2Count">Player2 Wins [0]</h2>
+    </div>
+  </section>
+
+  <section id="bars" class='hidden'>
+    <div id="boxStyle">
+      <box class="box hidden"></box>
+    </div>
+    <div id="boxStyleSecond">
+      <box class="box hidden"></box>
+    </div>
+
+    <progress id="firstBar" value="100" max="100"></progress>
+    <progress id="secondBar" value="100" max="100"></progress>
+    <p id="displayText"> </p>
+  </section>
+
+  <canvas width="1600" height="800" class="hidden">
+  </canvas>
+
+  <section class='mainMenu'>
+    <section id="header" class="container hero has-text-centered is-small">
+      <div class="hero-body">
+        <p class="title has-text-light">
+          Runtime Terrors
+        </p>
+        <p class="subtitle has-text-light">
+          By Tyler, Abdulmajid, and Max
+        </p>
+      </div>
+    </section>
+    <div class="container">
+      <box class="box has-background-dark"></box>
+      <section class="buttons">
+        <button id="startGame" class="button is-large is-hovered">Start Game</button>
+      </section>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="script.js"></script>
+  <!--    <script type="text/javascript" src="utils.js"></script> -->
+</body>
+
+</html>
